@@ -3,31 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Booking System</title>
+    <title>Book an appointment</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
-        <h1>Online Appointment Booking</h1>
-        <p>Book an appointment for the service you need.</p>
-        
+        <h1>Book Any Appointment!</h1>
         <div class="services">
             <div class="service">
-                <h3>Doctor Consultation</h3>
-                <button class="book-btn" onclick="openForm('Doctor Consultation')">Book Appointment</button>
+                <h3>Physician Consultation</h3>
+                <button class="book-btn" onclick="openForm('Physician Consultation')">Book Appointment</button>
             </div>
             <div class="service">
-                <h3>Salon Booking</h3>
-                <button class="book-btn" onclick="openForm('Salon Booking')">Book Appointment</button>
+                <h3>Catering Service</h3>
+                <button class="book-btn" onclick="openForm('Catering Service')">Book Appointment</button>
             </div>
             <div class="service">
-                <h3>Car Service</h3>
-                <button class="book-btn" onclick="openForm('Car Service')">Book Appointment</button>
+                <h3>Car Cleaning Service</h3>
+                <button class="book-btn" onclick="openForm('Car Cleaning Service')">Book Appointment</button>
             </div>
         </div>
     </div>
-
-    <!-- Appointment Booking Form Modal -->
     <div class="modal" id="appointmentForm">
         <div class="modal-content">
             <span class="close" onclick="closeForm()">&times;</span>
@@ -47,9 +43,9 @@
 
                 <label for="service">Select Service</label>
                 <select id="service">
-                    <option value="Doctor Consultation">Doctor Consultation</option>
-                    <option value="Salon Booking">Salon Booking</option>
-                    <option value="Car Service">Car Service</option>
+                    <option value="Physician Consultation">Physician Consultation</option>
+                    <option value="Catering Service">Catering Service</option>
+                    <option value="Car Cleaning Service">Car Cleaning Service</option>
                 </select>
 
                 <label for="dateTime">Preferred Date & Time</label>
@@ -69,15 +65,12 @@
         </div>
     </div>
 
-    <!-- Confirmation Popup -->
     <div id="confirmationPopup" class="popup">
         <div class="popup-content">
             <p id="confirmationMessage"></p>
             <button onclick="closePopup()">OK</button>
         </div>
     </div>
-
-    <!-- Booked Appointments List -->
     <div class="appointments">
         <h2>Booked Appointments</h2>
         <table id="appointmentsTable">
@@ -89,7 +82,6 @@
             </tr>
         </table>
     </div>
-
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
