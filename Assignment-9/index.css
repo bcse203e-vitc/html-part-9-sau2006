@@ -1,35 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
+body{
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #b1d1ee;
 }
-
-.container {
+.container{
     margin: 20px;
 }
-
-.services {
+.services{
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-
-.service {
+.service{
     background: white;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px gray;
 }
-
-.book-btn {
-    background-color: #28a745;
-    color: white;
+.book-btn{
+    background-color: #fffed1;
+    color: black;
     padding: 10px;
     border: none;
     cursor: pointer;
 }
-
-.modal {
+.modal{
     display: none;
     position: fixed;
     top: 50%;
@@ -39,13 +34,11 @@ body {
     padding: 20px;
     box-shadow: 0px 0px 10px gray;
 }
-
-.error {
+.error{
     color: red;
     font-size: 12px;
 }
-
-.popup {
+.popup{
     display: none;
     position: fixed;
     top: 50%;
